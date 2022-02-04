@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B749ECC70323E6861F08975 /* Pods_salsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EE6A62C73D44BA322F1269 /* Pods_salsaTests.framework */; };
+		8121E3AB22B77A3200C08184 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121E3AA22B77A3200C08184 /* ContactViewController.swift */; };
+		818A340122C5C85E00EFBA33 /* Gallery_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A340022C5C85E00EFBA33 /* Gallery_ViewController.swift */; };
+		81B16C4622B3AF910053F0BE /* About_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B16C4522B3AF910053F0BE /* About_ViewController.swift */; };
+		81B5476522CB339F00AC63C3 /* iCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5475822CB339F00AC63C3 /* iCal.swift */; };
+		81B5476622CB339F00AC63C3 /* iCalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5475A22CB339F00AC63C3 /* iCalError.swift */; };
+		81B5476722CB339F00AC63C3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5475B22CB339F00AC63C3 /* Event.swift */; };
+		81B5476822CB339F00AC63C3 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5475C22CB339F00AC63C3 /* Parser.swift */; };
+		81B5476922CB339F00AC63C3 /* CalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5475E22CB339F00AC63C3 /* CalendarComponent.swift */; };
+		81B5476A22CB339F00AC63C3 /* IcsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5475F22CB339F00AC63C3 /* IcsElement.swift */; };
+		81B5476B22CB339F00AC63C3 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5476022CB339F00AC63C3 /* Alarm.swift */; };
+		81B5476C22CB339F00AC63C3 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5476122CB339F00AC63C3 /* Calendar.swift */; };
+		81B5476D22CB339F00AC63C3 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5476322CB339F00AC63C3 /* Date.swift */; };
+		81B5476E22CB339F00AC63C3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5476422CB339F00AC63C3 /* String.swift */; };
+		81CB379D22B368D400CEB5EA /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378822B368D300CEB5EA /* Montserrat-Bold.otf */; };
+		81CB379E22B368D400CEB5EA /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378922B368D300CEB5EA /* Montserrat-LightItalic.ttf */; };
+		81CB379F22B368D400CEB5EA /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378A22B368D300CEB5EA /* Montserrat-Medium.ttf */; };
+		81CB37A022B368D400CEB5EA /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378B22B368D300CEB5EA /* Montserrat-Light.otf */; };
+		81CB37A122B368D400CEB5EA /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378C22B368D300CEB5EA /* Montserrat-BoldItalic.ttf */; };
+		81CB37A222B368D400CEB5EA /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378D22B368D300CEB5EA /* Montserrat-ThinItalic.ttf */; };
+		81CB37A322B368D400CEB5EA /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378E22B368D300CEB5EA /* Montserrat-ExtraLight.ttf */; };
+		81CB37A422B368D400CEB5EA /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB378F22B368D300CEB5EA /* Montserrat-Thin.ttf */; };
+		81CB37A522B368D400CEB5EA /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379022B368D300CEB5EA /* Montserrat-MediumItalic.ttf */; };
+		81CB37A622B368D400CEB5EA /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379122B368D300CEB5EA /* Montserrat-UltraLight.otf */; };
+		81CB37A722B368D400CEB5EA /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379222B368D300CEB5EA /* Montserrat-BlackItalic.ttf */; };
+		81CB37A822B368D400CEB5EA /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379322B368D300CEB5EA /* Montserrat-SemiBold.ttf */; };
+		81CB37A922B368D400CEB5EA /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379422B368D300CEB5EA /* Montserrat-ExtraLightItalic.ttf */; };
+		81CB37AA22B368D400CEB5EA /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379522B368D300CEB5EA /* Montserrat-ExtraBold.ttf */; };
+		81CB37AB22B368D400CEB5EA /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379622B368D300CEB5EA /* Montserrat-Regular.otf */; };
+		81CB37AC22B368D400CEB5EA /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379722B368D300CEB5EA /* Montserrat-ExtraBold.otf */; };
+		81CB37AD22B368D400CEB5EA /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379822B368D300CEB5EA /* Montserrat-Italic.ttf */; };
+		81CB37AE22B368D400CEB5EA /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379922B368D300CEB5EA /* Montserrat-Black.otf */; };
+		81CB37AF22B368D400CEB5EA /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379A22B368D300CEB5EA /* Montserrat-SemiBoldItalic.ttf */; };
+		81CB37B022B368D400CEB5EA /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379B22B368D300CEB5EA /* Montserrat-ExtraBoldItalic.ttf */; };
+		81CB37B122B368D400CEB5EA /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB379C22B368D300CEB5EA /* Montserrat-SemiBold.otf */; };
+		81D05B8022BA04970071A16D /* Event_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D05B7F22BA04970071A16D /* Event_TableViewController.swift */; };
+		81D05B8522BA0DBD0071A16D /* EventItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D05B8422BA0DBC0071A16D /* EventItemTableViewCell.swift */; };
+		81D8E7A822B26FC600542D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8E7A722B26FC600542D29 /* AppDelegate.swift */; };
+		81D8E7AA22B26FC600542D29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8E7A922B26FC600542D29 /* HomeViewController.swift */; };
+		81D8E7AD22B26FC600542D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D8E7AB22B26FC600542D29 /* Main.storyboard */; };
+		81D8E7AF22B26FD000542D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D8E7AE22B26FD000542D29 /* Assets.xcassets */; };
+		81D8E7B222B26FD000542D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D8E7B022B26FD000542D29 /* LaunchScreen.storyboard */; };
+		81D8E7BD22B26FD000542D29 /* salsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8E7BC22B26FD000542D29 /* salsaTests.swift */; };
+		81D8E7C822B26FD000542D29 /* salsaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8E7C722B26FD000542D29 /* salsaUITests.swift */; };
+		81D8E7D922B26FF400542D29 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D8E7D722B26FF400542D29 /* SWRevealViewController.m */; };
+		81E3993022B39CCA0085FF13 /* Main_menu_Buttons_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3992F22B39CCA0085FF13 /* Main_menu_Buttons_ViewController.swift */; };
+		91AE7BA70A90FD51F78CC6B7 /* Pods_salsaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065DF7D42366FD251CCCACE0 /* Pods_salsaUITests.framework */; };
+		D90BFC8AA7DE851571D1B0E5 /* Pods_salsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D621DD4C061897AD5D7898 /* Pods_salsa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81D8E7B922B26FD000542D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D8E79C22B26FC600542D29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D8E7A322B26FC600542D29;
+			remoteInfo = salsa;
+		};
+		81D8E7C422B26FD000542D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D8E79C22B26FC600542D29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D8E7A322B26FC600542D29;
+			remoteInfo = salsa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065DF7D42366FD251CCCACE0 /* Pods_salsaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_salsaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0917E9A9BBC547D5D916CA85 /* Pods-salsaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salsaUITests.debug.xcconfig"; path = "Target Support Files/Pods-salsaUITests/Pods-salsaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A0A95AA9F2279963C3E3D37 /* Pods-salsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salsa.release.xcconfig"; path = "Target Support Files/Pods-salsa/Pods-salsa.release.xcconfig"; sourceTree = "<group>"; };
+		8121E3AA22B77A3200C08184 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		818A340022C5C85E00EFBA33 /* Gallery_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery_ViewController.swift; sourceTree = "<group>"; };
+		81B16C4522B3AF910053F0BE /* About_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_ViewController.swift; sourceTree = "<group>"; };
+		81B5475822CB339F00AC63C3 /* iCal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCal.swift; sourceTree = "<group>"; };
+		81B5475A22CB339F00AC63C3 /* iCalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCalError.swift; sourceTree = "<group>"; };
+		81B5475B22CB339F00AC63C3 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		81B5475C22CB339F00AC63C3 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		81B5475E22CB339F00AC63C3 /* CalendarComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarComponent.swift; sourceTree = "<group>"; };
+		81B5475F22CB339F00AC63C3 /* IcsElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcsElement.swift; sourceTree = "<group>"; };
+		81B5476022CB339F00AC63C3 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		81B5476122CB339F00AC63C3 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		81B5476322CB339F00AC63C3 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		81B5476422CB339F00AC63C3 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		81CB378822B368D300CEB5EA /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		81CB378922B368D300CEB5EA /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		81CB378A22B368D300CEB5EA /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		81CB378B22B368D300CEB5EA /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		81CB378C22B368D300CEB5EA /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		81CB378D22B368D300CEB5EA /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		81CB378E22B368D300CEB5EA /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		81CB378F22B368D300CEB5EA /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		81CB379022B368D300CEB5EA /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		81CB379122B368D300CEB5EA /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
+		81CB379222B368D300CEB5EA /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		81CB379322B368D300CEB5EA /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		81CB379422B368D300CEB5EA /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		81CB379522B368D300CEB5EA /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		81CB379622B368D300CEB5EA /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		81CB379722B368D300CEB5EA /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		81CB379822B368D300CEB5EA /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		81CB379922B368D300CEB5EA /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		81CB379A22B368D300CEB5EA /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		81CB379B22B368D300CEB5EA /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		81CB379C22B368D300CEB5EA /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		81D05B7F22BA04970071A16D /* Event_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_TableViewController.swift; sourceTree = "<group>"; };
+		81D05B8422BA0DBC0071A16D /* EventItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemTableViewCell.swift; sourceTree = "<group>"; };
+		81D8E7A422B26FC600542D29 /* salsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = salsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D8E7A722B26FC600542D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81D8E7A922B26FC600542D29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		81D8E7AC22B26FC600542D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81D8E7AE22B26FD000542D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D8E7B122B26FD000542D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81D8E7B322B26FD000542D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D8E7B822B26FD000542D29 /* salsaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salsaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D8E7BC22B26FD000542D29 /* salsaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salsaTests.swift; sourceTree = "<group>"; };
+		81D8E7BE22B26FD000542D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D8E7C322B26FD000542D29 /* salsaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salsaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D8E7C722B26FD000542D29 /* salsaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salsaUITests.swift; sourceTree = "<group>"; };
+		81D8E7C922B26FD000542D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D8E7D622B26FF300542D29 /* salsa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "salsa-Bridging-Header.h"; sourceTree = "<group>"; };
+		81D8E7D722B26FF400542D29 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		81D8E7D822B26FF400542D29 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		81E3992F22B39CCA0085FF13 /* Main_menu_Buttons_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_menu_Buttons_ViewController.swift; sourceTree = "<group>"; };
+		B198DA51B91AFF4E83D6A141 /* Pods-salsa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salsa.debug.xcconfig"; path = "Target Support Files/Pods-salsa/Pods-salsa.debug.xcconfig"; sourceTree = "<group>"; };
+		D0EE6A62C73D44BA322F1269 /* Pods_salsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_salsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F611FCF130FB69BAA302C7 /* Pods-salsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salsaUITests.release.xcconfig"; path = "Target Support Files/Pods-salsaUITests/Pods-salsaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E24A196A766ABD2D02925015 /* Pods-salsaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salsaTests.release.xcconfig"; path = "Target Support Files/Pods-salsaTests/Pods-salsaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4D621DD4C061897AD5D7898 /* Pods_salsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_salsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F658B4F26897052EBABFB422 /* Pods-salsaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salsaTests.debug.xcconfig"; path = "Target Support Files/Pods-salsaTests/Pods-salsaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81D8E7A122B26FC600542D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90BFC8AA7DE851571D1B0E5 /* Pods_salsa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D8E7B522B26FD000542D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B749ECC70323E6861F08975 /* Pods_salsaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D8E7C022B26FD000542D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AE7BA70A90FD51F78CC6B7 /* Pods_salsaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81B5473F22CB333500AC63C3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				81B5476022CB339F00AC63C3 /* Alarm.swift */,
+				81B5476122CB339F00AC63C3 /* Calendar.swift */,
+				81B5475922CB339F00AC63C3 /* Enums */,
+				81B5475B22CB339F00AC63C3 /* Event.swift */,
+				81B5476222CB339F00AC63C3 /* Extensions */,
+				81B5475822CB339F00AC63C3 /* iCal.swift */,
+				81B5475C22CB339F00AC63C3 /* Parser.swift */,
+				81B5475D22CB339F00AC63C3 /* Protocols */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		81B5475922CB339F00AC63C3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				81B5475A22CB339F00AC63C3 /* iCalError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		81B5475D22CB339F00AC63C3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				81B5475E22CB339F00AC63C3 /* CalendarComponent.swift */,
+				81B5475F22CB339F00AC63C3 /* IcsElement.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		81B5476222CB339F00AC63C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81B5476322CB339F00AC63C3 /* Date.swift */,
+				81B5476422CB339F00AC63C3 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81CB378722B368D300CEB5EA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				81CB378822B368D300CEB5EA /* Montserrat-Bold.otf */,
+				81CB378922B368D300CEB5EA /* Montserrat-LightItalic.ttf */,
+				81CB378A22B368D300CEB5EA /* Montserrat-Medium.ttf */,
+				81CB378B22B368D300CEB5EA /* Montserrat-Light.otf */,
+				81CB378C22B368D300CEB5EA /* Montserrat-BoldItalic.ttf */,
+				81CB378D22B368D300CEB5EA /* Montserrat-ThinItalic.ttf */,
+				81CB378E22B368D300CEB5EA /* Montserrat-ExtraLight.ttf */,
+				81CB378F22B368D300CEB5EA /* Montserrat-Thin.ttf */,
+				81CB379022B368D300CEB5EA /* Montserrat-MediumItalic.ttf */,
+				81CB379122B368D300CEB5EA /* Montserrat-UltraLight.otf */,
+				81CB379222B368D300CEB5EA /* Montserrat-BlackItalic.ttf */,
+				81CB379322B368D300CEB5EA /* Montserrat-SemiBold.ttf */,
+				81CB379422B368D300CEB5EA /* Montserrat-ExtraLightItalic.ttf */,
+				81CB379522B368D300CEB5EA /* Montserrat-ExtraBold.ttf */,
+				81CB379622B368D300CEB5EA /* Montserrat-Regular.otf */,
+				81CB379722B368D300CEB5EA /* Montserrat-ExtraBold.otf */,
+				81CB379822B368D300CEB5EA /* Montserrat-Italic.ttf */,
+				81CB379922B368D300CEB5EA /* Montserrat-Black.otf */,
+				81CB379A22B368D300CEB5EA /* Montserrat-SemiBoldItalic.ttf */,
+				81CB379B22B368D300CEB5EA /* Montserrat-ExtraBoldItalic.ttf */,
+				81CB379C22B368D300CEB5EA /* Montserrat-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		81D8E79B22B26FC600542D29 = {
+			isa = PBXGroup;
+			children = (
+				81D8E7A622B26FC600542D29 /* salsa */,
+				81D8E7BB22B26FD000542D29 /* salsaTests */,
+				81D8E7C622B26FD000542D29 /* salsaUITests */,
+				81D8E7A522B26FC600542D29 /* Products */,
+				93BD5174B6E3159CFBC4E3A5 /* Pods */,
+				E163C4DD3FCF957BFE17847C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81D8E7A522B26FC600542D29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81D8E7A422B26FC600542D29 /* salsa.app */,
+				81D8E7B822B26FD000542D29 /* salsaTests.xctest */,
+				81D8E7C322B26FD000542D29 /* salsaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81D8E7A622B26FC600542D29 /* salsa */ = {
+			isa = PBXGroup;
+			children = (
+				81B5473F22CB333500AC63C3 /* Sources */,
+				81D8E7D522B26FE500542D29 /* manu */,
+				81D8E7A722B26FC600542D29 /* AppDelegate.swift */,
+				81D05B8422BA0DBC0071A16D /* EventItemTableViewCell.swift */,
+				81D8E7A922B26FC600542D29 /* HomeViewController.swift */,
+				81E3992F22B39CCA0085FF13 /* Main_menu_Buttons_ViewController.swift */,
+				81B16C4522B3AF910053F0BE /* About_ViewController.swift */,
+				8121E3AA22B77A3200C08184 /* ContactViewController.swift */,
+				81D05B7F22BA04970071A16D /* Event_TableViewController.swift */,
+				818A340022C5C85E00EFBA33 /* Gallery_ViewController.swift */,
+				81D8E7AB22B26FC600542D29 /* Main.storyboard */,
+				81D8E7AE22B26FD000542D29 /* Assets.xcassets */,
+				81D8E7B022B26FD000542D29 /* LaunchScreen.storyboard */,
+				81D8E7B322B26FD000542D29 /* Info.plist */,
+				81CB378722B368D300CEB5EA /* Fonts */,
+			);
+			path = salsa;
+			sourceTree = "<group>";
+		};
+		81D8E7BB22B26FD000542D29 /* salsaTests */ = {
+			isa = PBXGroup;
+			children = (
+				81D8E7BC22B26FD000542D29 /* salsaTests.swift */,
+				81D8E7BE22B26FD000542D29 /* Info.plist */,
+			);
+			path = salsaTests;
+			sourceTree = "<group>";
+		};
+		81D8E7C622B26FD000542D29 /* salsaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				81D8E7C722B26FD000542D29 /* salsaUITests.swift */,
+				81D8E7C922B26FD000542D29 /* Info.plist */,
+			);
+			path = salsaUITests;
+			sourceTree = "<group>";
+		};
+		81D8E7D522B26FE500542D29 /* manu */ = {
+			isa = PBXGroup;
+			children = (
+				81D8E7D822B26FF400542D29 /* SWRevealViewController.h */,
+				81D8E7D722B26FF400542D29 /* SWRevealViewController.m */,
+				81D8E7D622B26FF300542D29 /* salsa-Bridging-Header.h */,
+			);
+			path = manu;
+			sourceTree = "<group>";
+		};
+		93BD5174B6E3159CFBC4E3A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B198DA51B91AFF4E83D6A141 /* Pods-salsa.debug.xcconfig */,
+				7A0A95AA9F2279963C3E3D37 /* Pods-salsa.release.xcconfig */,
+				F658B4F26897052EBABFB422 /* Pods-salsaTests.debug.xcconfig */,
+				E24A196A766ABD2D02925015 /* Pods-salsaTests.release.xcconfig */,
+				0917E9A9BBC547D5D916CA85 /* Pods-salsaUITests.debug.xcconfig */,
+				D4F611FCF130FB69BAA302C7 /* Pods-salsaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E163C4DD3FCF957BFE17847C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4D621DD4C061897AD5D7898 /* Pods_salsa.framework */,
+				D0EE6A62C73D44BA322F1269 /* Pods_salsaTests.framework */,
+				065DF7D42366FD251CCCACE0 /* Pods_salsaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81D8E7A322B26FC600542D29 /* salsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D8E7CC22B26FD000542D29 /* Build configuration list for PBXNativeTarget "salsa" */;
+			buildPhases = (
+				CBA0EDDA76C222D7298FE409 /* [CP] Check Pods Manifest.lock */,
+				81D8E7A022B26FC600542D29 /* Sources */,
+				81D8E7A122B26FC600542D29 /* Frameworks */,
+				81D8E7A222B26FC600542D29 /* Resources */,
+				5B5698459E899D3D3FA8E830 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = salsa;
+			productName = salsa;
+			productReference = 81D8E7A422B26FC600542D29 /* salsa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81D8E7B722B26FD000542D29 /* salsaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D8E7CF22B26FD000542D29 /* Build configuration list for PBXNativeTarget "salsaTests" */;
+			buildPhases = (
+				BDCCE21F9723BD91CBB72EF1 /* [CP] Check Pods Manifest.lock */,
+				81D8E7B422B26FD000542D29 /* Sources */,
+				81D8E7B522B26FD000542D29 /* Frameworks */,
+				81D8E7B622B26FD000542D29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D8E7BA22B26FD000542D29 /* PBXTargetDependency */,
+			);
+			name = salsaTests;
+			productName = salsaTests;
+			productReference = 81D8E7B822B26FD000542D29 /* salsaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81D8E7C222B26FD000542D29 /* salsaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D8E7D222B26FD000542D29 /* Build configuration list for PBXNativeTarget "salsaUITests" */;
+			buildPhases = (
+				613C05DEF535113FCE97EE82 /* [CP] Check Pods Manifest.lock */,
+				81D8E7BF22B26FD000542D29 /* Sources */,
+				81D8E7C022B26FD000542D29 /* Frameworks */,
+				81D8E7C122B26FD000542D29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D8E7C522B26FD000542D29 /* PBXTargetDependency */,
+			);
+			name = salsaUITests;
+			productName = salsaUITests;
+			productReference = 81D8E7C322B26FD000542D29 /* salsaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81D8E79C22B26FC600542D29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Archmage Solutions";
+				TargetAttributes = {
+					81D8E7A322B26FC600542D29 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					81D8E7B722B26FD000542D29 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 81D8E7A322B26FC600542D29;
+					};
+					81D8E7C222B26FD000542D29 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 81D8E7A322B26FC600542D29;
+					};
+				};
+			};
+			buildConfigurationList = 81D8E79F22B26FC600542D29 /* Build configuration list for PBXProject "salsa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81D8E79B22B26FC600542D29;
+			productRefGroup = 81D8E7A522B26FC600542D29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81D8E7A322B26FC600542D29 /* salsa */,
+				81D8E7B722B26FD000542D29 /* salsaTests */,
+				81D8E7C222B26FD000542D29 /* salsaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81D8E7A222B26FC600542D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CB37AA22B368D400CEB5EA /* Montserrat-ExtraBold.ttf in Resources */,
+				81CB37A122B368D400CEB5EA /* Montserrat-BoldItalic.ttf in Resources */,
+				81CB37A722B368D400CEB5EA /* Montserrat-BlackItalic.ttf in Resources */,
+				81D8E7B222B26FD000542D29 /* LaunchScreen.storyboard in Resources */,
+				81D8E7AF22B26FD000542D29 /* Assets.xcassets in Resources */,
+				81D8E7AD22B26FC600542D29 /* Main.storyboard in Resources */,
+				81CB379E22B368D400CEB5EA /* Montserrat-LightItalic.ttf in Resources */,
+				81CB37B022B368D400CEB5EA /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				81CB37AC22B368D400CEB5EA /* Montserrat-ExtraBold.otf in Resources */,
+				81CB37B122B368D400CEB5EA /* Montserrat-SemiBold.otf in Resources */,
+				81CB37A222B368D400CEB5EA /* Montserrat-ThinItalic.ttf in Resources */,
+				81CB379F22B368D400CEB5EA /* Montserrat-Medium.ttf in Resources */,
+				81CB37A422B368D400CEB5EA /* Montserrat-Thin.ttf in Resources */,
+				81CB37A922B368D400CEB5EA /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				81CB37AF22B368D400CEB5EA /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				81CB37A822B368D400CEB5EA /* Montserrat-SemiBold.ttf in Resources */,
+				81CB37AE22B368D400CEB5EA /* Montserrat-Black.otf in Resources */,
+				81CB37A022B368D400CEB5EA /* Montserrat-Light.otf in Resources */,
+				81CB379D22B368D400CEB5EA /* Montserrat-Bold.otf in Resources */,
+				81CB37AD22B368D400CEB5EA /* Montserrat-Italic.ttf in Resources */,
+				81CB37A522B368D400CEB5EA /* Montserrat-MediumItalic.ttf in Resources */,
+				81CB37A622B368D400CEB5EA /* Montserrat-UltraLight.otf in Resources */,
+				81CB37A322B368D400CEB5EA /* Montserrat-ExtraLight.ttf in Resources */,
+				81CB37AB22B368D400CEB5EA /* Montserrat-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D8E7B622B26FD000542D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D8E7C122B26FD000542D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B5698459E899D3D3FA8E830 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-salsa/Pods-salsa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-salsa/Pods-salsa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-salsa/Pods-salsa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		613C05DEF535113FCE97EE82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-salsaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDCCE21F9723BD91CBB72EF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-salsaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA0EDDA76C222D7298FE409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-salsa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81D8E7A022B26FC600542D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B5476E22CB339F00AC63C3 /* String.swift in Sources */,
+				81D8E7AA22B26FC600542D29 /* HomeViewController.swift in Sources */,
+				81B5476622CB339F00AC63C3 /* iCalError.swift in Sources */,
+				81D05B8522BA0DBD0071A16D /* EventItemTableViewCell.swift in Sources */,
+				81B5476B22CB339F00AC63C3 /* Alarm.swift in Sources */,
+				81D8E7A822B26FC600542D29 /* AppDelegate.swift in Sources */,
+				81B5476822CB339F00AC63C3 /* Parser.swift in Sources */,
+				81B5476922CB339F00AC63C3 /* CalendarComponent.swift in Sources */,
+				81B5476D22CB339F00AC63C3 /* Date.swift in Sources */,
+				81B5476722CB339F00AC63C3 /* Event.swift in Sources */,
+				81D05B8022BA04970071A16D /* Event_TableViewController.swift in Sources */,
+				81B5476A22CB339F00AC63C3 /* IcsElement.swift in Sources */,
+				81B5476522CB339F00AC63C3 /* iCal.swift in Sources */,
+				81B16C4622B3AF910053F0BE /* About_ViewController.swift in Sources */,
+				81E3993022B39CCA0085FF13 /* Main_menu_Buttons_ViewController.swift in Sources */,
+				81D8E7D922B26FF400542D29 /* SWRevealViewController.m in Sources */,
+				81B5476C22CB339F00AC63C3 /* Calendar.swift in Sources */,
+				8121E3AB22B77A3200C08184 /* ContactViewController.swift in Sources */,
+				818A340122C5C85E00EFBA33 /* Gallery_ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D8E7B422B26FD000542D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D8E7BD22B26FD000542D29 /* salsaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D8E7BF22B26FD000542D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D8E7C822B26FD000542D29 /* salsaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81D8E7BA22B26FD000542D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D8E7A322B26FC600542D29 /* salsa */;
+			targetProxy = 81D8E7B922B26FD000542D29 /* PBXContainerItemProxy */;
+		};
+		81D8E7C522B26FD000542D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D8E7A322B26FC600542D29 /* salsa */;
+			targetProxy = 81D8E7C422B26FD000542D29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81D8E7AB22B26FC600542D29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81D8E7AC22B26FC600542D29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81D8E7B022B26FD000542D29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81D8E7B122B26FD000542D29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81D8E7CA22B26FD000542D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81D8E7CB22B26FD000542D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81D8E7CD22B26FD000542D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B198DA51B91AFF4E83D6A141 /* Pods-salsa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ETVW6G72K;
+				INFOPLIST_FILE = salsa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eugein.HavanaSalsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "salsa/manu/salsa-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		81D8E7CE22B26FD000542D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0A95AA9F2279963C3E3D37 /* Pods-salsa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ETVW6G72K;
+				INFOPLIST_FILE = salsa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eugein.HavanaSalsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "salsa/manu/salsa-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		81D8E7D022B26FD000542D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F658B4F26897052EBABFB422 /* Pods-salsaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7KJC8S9KL;
+				INFOPLIST_FILE = salsaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archmage.salsaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salsa.app/salsa";
+			};
+			name = Debug;
+		};
+		81D8E7D122B26FD000542D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24A196A766ABD2D02925015 /* Pods-salsaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7KJC8S9KL;
+				INFOPLIST_FILE = salsaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archmage.salsaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salsa.app/salsa";
+			};
+			name = Release;
+		};
+		81D8E7D322B26FD000542D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0917E9A9BBC547D5D916CA85 /* Pods-salsaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7KJC8S9KL;
+				INFOPLIST_FILE = salsaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archmage.salsaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = salsa;
+			};
+			name = Debug;
+		};
+		81D8E7D422B26FD000542D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F611FCF130FB69BAA302C7 /* Pods-salsaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7KJC8S9KL;
+				INFOPLIST_FILE = salsaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archmage.salsaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = salsa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81D8E79F22B26FC600542D29 /* Build configuration list for PBXProject "salsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D8E7CA22B26FD000542D29 /* Debug */,
+				81D8E7CB22B26FD000542D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D8E7CC22B26FD000542D29 /* Build configuration list for PBXNativeTarget "salsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D8E7CD22B26FD000542D29 /* Debug */,
+				81D8E7CE22B26FD000542D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D8E7CF22B26FD000542D29 /* Build configuration list for PBXNativeTarget "salsaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D8E7D022B26FD000542D29 /* Debug */,
+				81D8E7D122B26FD000542D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D8E7D222B26FD000542D29 /* Build configuration list for PBXNativeTarget "salsaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D8E7D322B26FD000542D29 /* Debug */,
+				81D8E7D422B26FD000542D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81D8E79C22B26FC600542D29 /* Project object */;
+}
